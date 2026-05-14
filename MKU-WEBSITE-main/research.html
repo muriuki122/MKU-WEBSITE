@@ -1,0 +1,479 @@
+<!-- research.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description"
+    content="Cutting-edge placental research in malaria, diagnostics, genomics, and clinical trials — transforming maternal health in Africa.">
+  <title>MKU CPR | Revolutionary Research in Placental Health</title>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230f67b3'%3E%3Cpath d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/%3E%3C/svg%3E">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/research.css">
+
+  <script src="scripts/research.js" defer></script>
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-area">
+        <div class="logo-icon">CP</div>
+        <div class="logo-text">
+          <h1>MKU CPR</h1>
+          <span>Centre for Placenta Research</span>
+        </div>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li class="nav-group-core">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="research.html" class="active">Research</a>
+            <a href="people.html">People</a>
+            <a href="publication.html">Publications</a>
+          </li>
+          <li class="nav-separator" aria-hidden="true"></li>
+          <li class="nav-group-hub">
+
+            <a href="community.html">Community</a>
+          </li>
+          <li class="nav-action">
+            <a href="contact.html" class="contact-btn">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false"
+        onclick="const e=document.getElementById('mobileMenu'); e.style.display=(e.style.display==='flex'?'none':'flex'); this.innerHTML=(e.style.display==='flex'?'✕':'☰');">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="people.html">People</a>
+      <a href="publication.html">Publications</a>
+      <a href="community.html">Community</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero with parallax & glitch effect -->
+    <section class="hero-research">
+
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-particles" id="heroParticles"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">🔬 Wellcome Trust Discovery Award · Africa’s first dedicated placenta centre</div>
+          <h1>Decoding the <span class="gradient-text">Placenta</span><br>to Save Mothers & Babies</h1>
+          <p>High-resolution genomics, AI-driven diagnostics, and community-embedded trials — redefining maternal-fetal
+            medicine across Africa.</p>
+
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span></span><span></span><span></span>
+      </div>
+    </section>
+
+    <!-- Research impact micro-stats -->
+    <section class="impact-ribbon">
+      <div class="container">
+        <div class="impact-grid">
+          <div class="impact-item"><span>47+</span>
+            <p>Peer-reviewed papers</p><small>in high-impact journals</small>
+          </div>
+          <div class="impact-item"><span>15K+</span>
+            <p>Lives directly impacted</p><small>mothers & newborns</small>
+          </div>
+          <div class="impact-item"><span>12</span>
+            <p>Active clinical sites</p><small>across Kenya</small>
+          </div>
+          <div class="impact-item"><span>£4.2M</span>
+            <p>Wellcome funding</p><small>2026–2031</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Four core research pillars with creative cards -->
+    <section class="research-pillars">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Research <span class="accent">Frontiers</span></h2>
+          <div class="header-line"></div>
+          <p>Integrating molecular discovery, engineering, and clinical translation to eliminate preventable placental
+            diseases.</p>
+        </div>
+        <div class="pillars-grid">
+          <!-- Malaria & Genomic Surveillance -->
+          <div class="pillar-card" data-tilt>
+            <div class="card-bg-icon">🦠</div>
+            <div class="card-icon"><img src="images/Malaria-Genomic-Surveillance.jpg"
+                alt="Malaria & Genomic Surveillance">
+            </div>
+            <h3>Malaria & Genomic Surveillance</h3>
+            <p>Long-read sequencing & phylogeography to track artemisinin resistance, pfhrp2/3 deletions, and
+              transmission networks in real time.</p>
+            <div class="tech-stack">
+              <span>Nanopore</span><span>CRISPR-Cas13</span><span>WGS</span>
+            </div>
+            <a href="#" class="card-link">Learn more →</a>
+          </div>
+          <!-- Placental Malaria & Maternal Health -->
+          <div class="pillar-card" data-tilt>
+            <div class="card-bg-icon">🤱</div>
+            <div class="card-icon"><img src="images/Placental-Malaria-Maternal-Health.jpg"
+                alt="Placental Malaria & Maternal Health">
+            </div>
+            <h3>Placental Malaria & Maternal Health</h3>
+            <p>Single‑cell atlas of infected placentas reveals novel immune checkpoints & biomarkers for preterm birth
+              and low birthweight.</p>
+            <div class="tech-stack">
+              <span>scRNA-seq</span><span>multiplex imaging</span><span>proteomics</span>
+            </div>
+            <a href="#" class="card-link">Learn more →</a>
+          </div>
+          <!-- Point‑of‑Care Diagnostics -->
+          <div class="pillar-card" data-tilt>
+            <div class="card-bg-icon">🧪</div>
+            <div class="card-icon"><img src="images/Point‑of‑Care-Diagnostics.jpg" alt="Point‑of‑Care Diagnostics">
+            </div>
+            <h3>Point‑of‑Care Diagnostics</h3>
+            <p>Lab‑on‑a‑chip, smartphone‑based malaria & syphilis tests with 98% sensitivity, designed for rural clinics
+              and low-literacy users.</p>
+            <div class="tech-stack">
+              <span>microfluidics</span><span>RPA</span><span>AI‑readout</span>
+            </div>
+            <a href="#" class="card-link">Learn more →</a>
+          </div>
+          <!-- Clinical Trials & Implementation Science -->
+          <div class="pillar-card" data-tilt>
+            <div class="card-bg-icon">🏥</div>
+            <div class="card-icon"><img src="images/Clinical-Trials-Implementation.jpg"
+                alt="Clinical Trials & Implementation"></div>
+            <h3>Clinical Trials & Implementation</h3>
+            <p>Cluster‑randomized trials evaluating diagnostic impact, health economic analyses, and scale‑up strategies
+              for national adoption.</p>
+            <div class="tech-stack">
+              <span>Pragmatic trials</span><span>implementation science</span><span>cost‑effectiveness</span>
+            </div>
+            <a href="#" class="card-link">Learn more →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive timeline / breakthrough milestones (creative) -->
+    <section class="breakthroughs">
+      <div class="container">
+        <div class="section-header light">
+          <h2>Recent Breakthroughs</h2>
+          <div class="header-line"></div>
+          <p>Discoveries that are rewriting placental medicine</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="year">2025</span>
+              <h4>First single‑cell atlas of malaria‑infected placenta</h4>
+              <p>Identified new macrophage subset driving adverse outcomes — published in <em>Nature Medicine</em>.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="year">2024</span>
+              <h4>CRISPR-based congenital syphilis test</h4>
+              <p>Field‑validated in 12 clinics; 15‑minute results with mobile reporting.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="year">2023</span>
+              <h4>Wellcome Discovery Award</h4>
+              <p>£4.2M to establish Africa’s first placenta research centre at MKU.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discovery Hub: Scientific Context -->
+    <section class="discovery-hub" id="discovery">
+      <div class="container">
+        <div class="hub-header">
+          <div class="badge-mini">Placenta 101</div>
+          <h2>The Scientific Canvas</h2>
+          <p>Scientific essentials based on clinical data from the Cleveland Clinic</p>
+        </div>
+        <div class="hub-grid">
+          <div class="hub-card">
+            <div class="card-icon">⚡</div>
+            <h3>Vital Functions</h3>
+            <p>A temporary organ serving as the fetus’s lungs, kidneys, and liver. It provides oxygen/nutrients, removes
+              waste, and transfers immunity.</p>
+            <ul class="hub-list">
+              <li>🧬 Nutrient Transfer</li>
+              <li>🛡️ Immune Jumpstart</li>
+              <li>🌡️ Hormone Production</li>
+            </ul>
+          </div>
+          <div class="hub-card accent">
+            <div class="card-icon">🫀</div>
+            <h3>Complex Anatomy</h3>
+            <p>A disc-shaped organ (~9 inches) containing 40+ villi structures that "bathe" in maternal blood to support
+              uninterrupted fetal growth.</p>
+            <ul class="hub-list">
+              <li>🌳 Villi "Tree" Network</li>
+              <li>🩸 Disc Architecture</li>
+              <li>🍼 Placental Cavity</li>
+            </ul>
+          </div>
+          <div class="hub-card alert">
+            <div class="card-icon">⚠️</div>
+            <h3>Clinical Watch</h3>
+            <p>Early identification of abnormalities like Previa, Accreta, or Abruption is critical for maternal and
+              newborn survival.</p>
+            <ul class="hub-list">
+              <li>🩺 Placenta Accreta</li>
+              <li>🚨 Placental Abruption</li>
+              <li>🤰 Placental Insufficiency</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="visual-index-section">
+          <div class="hub-header">
+            <h2>Essential Clinical Search Indices</h2>
+            <p>Visual guides to common placental conditions and diagnostic biological markers</p>
+          </div>
+          <div class="visual-index-grid">
+            <!-- Card 1 -->
+            <div class="index-card">
+              <div class="index-img-wrapper">
+                <img src="images/placenta-previa.jpg" alt="Placenta Previa">
+              </div>
+              <div class="index-content">
+                <h3>Placenta Previa</h3>
+                <p>When the placenta covers the cervix, potentially causing severe bleeding. Essential terminology for
+                  prenatal surgical planning.</p>
+                <div class="index-footer">
+
+                  <a href="https://my.clevelandclinic.org/health/diseases/24211-placenta-previa" target="_blank"
+                    class="index-more">Search details →</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="index-card">
+              <div class="index-img-wrapper">
+                <img src="images/congenital-syphilis.jpg" alt="Congenital Syphilis">
+              </div>
+              <div class="index-content">
+                <h3>Congenital Syphilis</h3>
+                <p>An infection passed from mother to fetus. Our CRISPR-POC research focuses on rapid, 20-minute field
+                  detection to prevent transmission.</p>
+                <div class="index-footer">
+
+                  <a href="https://my.clevelandclinic.org/health/diseases/24189-bacterial-infection" target="_blank"
+                    class="index-more">Search details →</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="index-card">
+              <div class="index-img-wrapper">
+                <img src="images/preeclampsia.jpg" alt="Preeclampsia">
+              </div>
+              <div class="index-content">
+                <h3>Preeclampsia</h3>
+                <p>High blood pressure related to placental blood supply issues. A leading cause of maternal morbidity
+                  in Sub-Saharan Africa.</p>
+                <div class="index-footer">
+
+                  <a href="https://my.clevelandclinic.org/health/diseases/17952-preeclampsia" target="_blank"
+                    class="index-more">Search details →</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="index-card">
+              <div class="index-img-wrapper">
+                <img src="images/gestational-diabetes.jpg" alt="Gestational Diabetes">
+              </div>
+              <div class="index-content">
+                <h3>Gestational Diabetes</h3>
+                <p>Placental hormones can cause insulin resistance. We study the metabolic pathways between placental
+                  health and blood sugar levels.</p>
+                <div class="index-footer">
+
+                  <a href="https://my.clevelandclinic.org/health/diseases/9012-gestational-diabetes" target="_blank"
+                    class="index-more">Search details →</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="index-card">
+              <div class="index-img-wrapper">
+                <img src="images/vaginal-bleeding-alerts.jpg" alt="Vaginal Bleeding Alerts">
+              </div>
+              <div class="index-content">
+                <h3>Vaginal Bleeding Alerts</h3>
+                <p>The primary clinical sign of placental abruption or disorder. Knowledge of these alerts is vital for
+                  early community intervention.</p>
+                <div class="index-footer">
+
+                  <a href="https://my.clevelandclinic.org/health/symptoms/17899-vaginal-bleeding" target="_blank"
+                    class="index-more">Search details →</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="index-card">
+              <div class="index-img-wrapper">
+                <img src="images/intrauterine-growth-restriction.jpg" alt="IUGR">
+              </div>
+              <div class="index-content">
+                <h3>Intrauterine Growth Restriction</h3>
+                <p>Delayed fetal growth due to placental insufficiency. Our genomic research maps the immune dysfunction
+                  driving this condition.</p>
+                <div class="index-footer">
+
+                  <a href="https://my.clevelandclinic.org/health/diseases/24017-intrauterine-growth-restriction"
+                    target="_blank" class="index-more">Search details →</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="index-card">
+              <div class="index-img-wrapper">
+                <img src="images/hcg-hormones.jpg" alt="HCG Hormones">
+              </div>
+              <div class="index-content">
+                <h3>HCG Hormones</h3>
+                <p>The first signal of pregnancy from the placenta. Maintaining high HCG is vital for supporting early
+                  fetal development and hormones.</p>
+                <div class="index-footer">
+
+                  <a href="https://my.clevelandclinic.org/health/articles/22489-human-chorionic-gonadotropin"
+                    target="_blank" class="index-more">Search details →</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="index-card">
+              <div class="index-img-wrapper">
+                <img src="images/progesterone-levels.jpg" alt="Progesterone Levels">
+              </div>
+              <div class="index-content">
+                <h3>Progesterone Levels</h3>
+                <p>Placental progesterone maintains the uterine lining. Any drops can trigger preterm birth — a core
+                  focus of our clinical surveillance.</p>
+                <div class="index-footer">
+
+                  <a href="https://my.clevelandclinic.org/health/body/24562-progesterone" target="_blank"
+                    class="index-more">Search details →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collaborative partners marquee -->
+    <section class="partners">
+      <div class="container">
+        <div class="section-header">
+          <h2>Global Collaborators</h2>
+          <p>Working together to accelerate impact</p>
+        </div>
+        <div class="partner-logos">
+          <div class="logo-slider">
+            <span>Wellcome Trust</span><span>NIH</span><span>KEMRI</span><span>LSHTM</span><span>Oxford</span><span>Bill
+              & Melinda Gates Foundation</span>
+            <span>Wellcome Trust</span><span>NIH</span><span>KEMRI</span><span>LSHTM</span><span>Oxford</span><span>Bill
+              & Melinda Gates Foundation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action gradient -->
+    <section class="cta-research">
+      <div class="container">
+        <div class="cta-card">
+          <h2>Shape the future of maternal health</h2>
+          <p>Join our network of researchers, clinicians, and innovators.</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn-primary-white">Partner with us →</a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <div class="footer-logo-icon">CP</div>
+            <div><span class="footer-logo-text">MKU CPR</span><br><span class="footer-logo-sub">Centre for Placenta
+                Research</span></div>
+          </div>
+          <p class="footer-description">Pioneering equitable placental research to end preventable maternal deaths.</p>
+          <div class="social-icons">
+            <a href="https://x.com/CRID_MKU" class="social-icon" target="_blank">𝕏</a>
+            <a href="https://www.linkedin.com/in/gitaka-lab?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              class="social-icon" target="_blank">in</a>
+            <a href="https://www.instagram.com/GITAKA_LAB_CME" class="social-icon" target="_blank">📸</a>
+          </div>
+        </div>
+        <div>
+          <h4>Research</h4>
+          <ul>
+            <li><a href="research.html">Malaria</a></li>
+            <li><a href="research.html">Diagnostics</a></li>
+            <li><a href="research.html">Genomics</a></li>
+            <li><a href="research.html">Clinical trials</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Centre</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="publication.html">Publications</a></li>
+
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <address>
+            <p>📍 MKU, Thika Road, Nairobi</p>
+            <p>📞 +254 700 123 456</p>
+            <p>✉️ research@mku-cpr.org</p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 MKU Centre for Placenta Research — Supported by Wellcome Trust</span>
+        <div><a href="contact.html">Privacy</a> | <a href="contact.html">Accessibility</a></div>
+      </div>
+    </div>
+
+</body>
+
+</html>

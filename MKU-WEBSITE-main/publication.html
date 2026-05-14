@@ -1,0 +1,199 @@
+<!-- publications.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description"
+    content="Explore groundbreaking research publications from MKU Centre for Placenta Research – placental malaria, diagnostics, genomics, and maternal health.">
+  <title>MKU CPR | Publications & Research Output</title>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230f67b3'%3E%3Cpath d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/publication.css">
+  <script src="scripts/publication.js" defer></script>
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-area">
+        <div class="logo-icon">CP</div>
+        <div class="logo-text">
+          <h1>MKU CPR</h1><span>Centre for Placenta Research</span>
+        </div>
+      </a>
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="index.html">🏠 Home</a></li>
+          <li><a href="about.html">ℹ️ About</a></li>
+          <li><a href="research.html">🔬 Research</a></li>
+          <li><a href="people.html">👥 People</a></li>
+
+          <li><a href="publication.html" class="active">📚 Publications</a></li>
+          <li><a href="community.html">🤝 Community</a></li>
+          <li><a href="contact.html" class="contact-btn">📧 Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="research.html">Research</a><a
+        href="people.html">People</a>
+      <a href="publication.html" class="active">Publications</a><a href="community.html">Community</a><a
+        href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- hero -->
+    <section class="hero-pubs">
+      <div class="container hero-content">
+        <div class="hero-badge">📚 Wellcome Trust Discovery Award</div>
+        <h1>Our Scientific <span class="gradient-text">Publications</span></h1>
+        <p>Peer-reviewed research advancing placental medicine, malaria elimination, and maternal health in Africa.</p>
+      </div>
+    </section>
+
+    <!-- Featured Publication (Transferred from News) -->
+    <section class="featured-pub-section">
+      <div class="container">
+        <div class="featured-card">
+          <div class="featured-image">
+            <img src="images/news/featured-malaria-atlas.png" alt="Nature Medicine publication">
+            <span class="featured-badge">⭐ Featured</span>
+          </div>
+          <div class="featured-content">
+            <time datetime="2024-10-15">October 15, 2024</time>
+            <h2>Major Breakthrough in Placental Malaria Research Published in Nature Medicine</h2>
+            <p>Our team's groundbreaking study on the single-cell atlas of malaria-infected placenta has been published
+              in Nature Medicine, marking a significant milestone in understanding placental malaria pathology. This
+              research opens new avenues for therapeutic interventions and could save thousands of maternal and infant
+              lives across Africa.</p>
+            <div class="featured-tags">
+              <span>🏆 Nature Medicine</span>
+              <span>🦟 Placental Malaria</span>
+              <span>🔬 Single Cell Atlas</span>
+            </div>
+            <a href="https://www.nature.com/articles/s41591-024-03306-6" target="_blank" class="btn-primary"
+              id="featuredReadMore">Read Full Story →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- stats counters -->
+    <section class="stats-row">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number" id="counterPubs">0</div>
+            <div class="stat-label">Total Publications</div>
+            <div class="stat-sub">since 2020</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" id="counterImpact">0</div>
+            <div class="stat-label">High-Impact Journals</div>
+            <div class="stat-sub">IF > 10</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" id="counterCitations">0</div>
+            <div class="stat-label">Citations</div>
+            <div class="stat-sub">Google Scholar</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" id="counterCountries">0</div>
+            <div class="stat-label">Collaborating Countries</div>
+            <div class="stat-sub">worldwide</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- filter tabs + dynamic publications grid -->
+    <section class="tabs-section">
+      <div class="container">
+        <div class="filter-tabs" id="filterTabs">
+          <button class="tab-btn active" data-filter="all">All Publications</button>
+          <button class="tab-btn" data-filter="malaria">🦟 Placental Malaria</button>
+          <button class="tab-btn" data-filter="diagnostics">🧪 Diagnostics</button>
+          <button class="tab-btn" data-filter="genomics">🧬 Genomics</button>
+          <button class="tab-btn" data-filter="maternal">🤱 Maternal Health</button>
+        </div>
+        <div class="pubs-grid" id="pubsGrid"></div>
+      </div>
+    </section>
+
+    <!-- PDF Modal Viewer -->
+    <div id="pdfModal" class="modal-overlay">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h3 id="modalTitle">Publication Viewer</h3>
+          <button class="modal-close" id="closeModal">✕</button>
+        </div>
+        <div class="modal-body">
+          <iframe id="pdfFrame" src="" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- collaboration cta -->
+    <div class="container">
+      <div class="cta-pubs">
+        <h3>Collaborate with our research network</h3>
+        <p>Access preprints, datasets, and joint funding opportunities</p>
+        <div class="btn-group"><a href="#" class="btn-primary">Request collaboration →</a><a href="#"
+            class="btn-outline">View all authors</a></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><span style="font-weight:800;">MKU CPR</span><br>Centre for Placenta Research</div>
+          <p>Africa’s first dedicated placenta research centre.</p>
+          <div class="social-icons">
+            <a href="https://x.com/CRID_MKU" class="social-icon" target="_blank">𝕏</a>
+            <a href="https://www.linkedin.com/in/gitaka-lab?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              class="social-icon" target="_blank">in</a>
+            <a href="https://www.instagram.com/GITAKA_LAB_CME" class="social-icon" target="_blank">📸</a>
+          </div>
+        </div>
+        <div>
+          <h4>Research</h4>
+          <ul>
+            <li><a href="research.html">Malaria</a></li>
+            <li><a href="research.html">Diagnostics</a></li>
+            <li><a href="research.html">Genomics</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Centre</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="publication.html">Publications</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 MKU CPR – Wellcome Trust Discovery Award</span>
+        <div><a href="contact.html">Privacy</a> | <a href="contact.html">Accessibility</a></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description"
+    content="Get in touch with Africa's first dedicated placental research centre. Contact us for collaborations, partnerships, or inquiries.">
+  <title>MKU CPR | Contact – Get in Touch</title>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230f67b3'%3E%3Cpath d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/%3E%3C/svg%3E">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="styles/contact.css">
+  <script src="scripts/contact.js" defer></script>
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-area">
+        <div class="logo-icon">CP</div>
+        <div class="logo-text">
+          <h1>MKU CPR</h1><span>Centre for Placenta Research</span>
+        </div>
+      </a>
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="index.html">🏠 Home</a></li>
+          <li><a href="about.html">ℹ️ About</a></li>
+          <li><a href="research.html">🔬 Research</a></li>
+          <li><a href="people.html">👥 People</a></li>
+
+          <li><a href="publication.html">📚 Publications</a></li>
+          <li><a href="community.html">🤝 Community</a></li>
+          <li><a href="contact.html" class="active">📧 Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="research.html">Research</a><a
+        href="people.html">People</a>
+      <a href="publication.html">Publications</a><a href="community.html">Community</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero Section with animated gradient -->
+    <section class="hero-contact">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-badge">📧 Get in Touch</div>
+        <h1>Contact <span class="gradient-text">Our Team</span></h1>
+        <p>We welcome research collaborations, partnerships, and inquiries from passionate individuals and
+          organisations.</p>
+      </div>
+    </section>
+
+    <!-- Impact Stats (animated counters) -->
+    <section class="stats-row">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" id="counterCountries">0</div>
+            <div class="stat-label">Partner Countries</div>
+            <div class="stat-sub">global reach</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="counterProjects">0</div>
+            <div class="stat-label">Active Projects</div>
+            <div class="stat-sub">ongoing research</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="counterResponse">0<span style="font-size:1.6rem;">hrs</span></div>
+            <div class="stat-label">Avg. Response</div>
+            <div class="stat-sub">email inquiries</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="counterPartners">0</div>
+            <div class="stat-label">Global Partners</div>
+            <div class="stat-sub">collaborators</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Cards & Form (advanced layout) -->
+    <section class="contact-main">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Left: Contact Info Cards -->
+          <div class="contact-info">
+            <div class="info-card">
+              <div class="info-icon">📍</div>
+              <h3>Main Office</h3>
+              <p>MKU Centre for Placenta Research<br>Mount Kenya University<br>Thika Road, Nairobi, Kenya</p>
+              <p class="contact-detail"><strong>Phone:</strong> +254 700 123 456</p>
+              <p class="contact-detail"><strong>Email:</strong> info@mku-cpr.org</p>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">🔬</div>
+              <h3>Research Inquiries</h3>
+              <p><strong>Director:</strong> Prof. Jesse Gitaka<br>director@mku-cpr.org</p>
+              <p><strong>Research Lab:</strong> research@mku-cpr.org</p>
+              <p><strong>Phone:</strong> +254 700 123 457</p>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">🤝</div>
+              <h3>Partnerships & Media</h3>
+              <p><strong>Partnerships:</strong> partners@mku-cpr.org</p>
+              <p><strong>Media:</strong> media@mku-cpr.org</p>
+              <p><strong>Funding:</strong> funding@mku-cpr.org</p>
+            </div>
+          </div>
+
+          <!-- Right: Advanced Contact Form -->
+          <div class="contact-form-wrapper">
+            <h2>Send us a message</h2>
+            <p class="form-subtitle">We'll get back to you within 24 hours</p>
+            <form id="advancedContactForm" class="advanced-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" id="firstName" required>
+                  <label>First Name *</label>
+                  <div class="error-msg" data-for="firstName"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="lastName" required>
+                  <label>Last Name *</label>
+                  <div class="error-msg" data-for="lastName"></div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="email" id="email" required>
+                  <label>Email Address *</label>
+                  <div class="error-msg" data-for="email"></div>
+                </div>
+                <div class="form-group">
+                  <input type="tel" id="phone">
+                  <label>Phone Number</label>
+                  <div class="error-msg" data-for="phone"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" id="organization">
+                <label>Organization / Institution</label>
+              </div>
+              <div class="form-group">
+                <select id="subject" required>
+                  <option value="" disabled selected>Select a subject</option>
+                  <option value="research">Research Collaboration</option>
+                  <option value="partnership">Partnership Opportunity</option>
+                  <option value="media">Media Inquiry</option>
+                  <option value="funding">Funding Opportunity</option>
+                  <option value="general">General Inquiry</option>
+                </select>
+                <label>Subject *</label>
+                <div class="error-msg" data-for="subject"></div>
+              </div>
+              <div class="form-group">
+                <textarea id="message" rows="5" required></textarea>
+                <label>Message *</label>
+                <div class="error-msg" data-for="message"></div>
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" id="newsletter">
+                <label for="newsletter">Subscribe to research updates and news</label>
+              </div>
+              <button type="submit" class="submit-btn">Send Message →</button>
+              <div id="formFeedback" class="form-feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Office Hours & Map Section -->
+    <section class="office-map-section">
+      <div class="container">
+        <div class="office-hours">
+          <h3>⏰ Office Hours</h3>
+          <div class="hours-grid">
+            <div><strong>Main Office:</strong> Mon-Fri 8AM–6PM, Sat 9AM–1PM</div>
+            <div><strong>Laboratory:</strong> Mon-Fri 7AM–8PM, Sat 8AM–4PM</div>
+            <div><strong>Email Response:</strong> Within 24h weekdays, 48h weekends</div>
+          </div>
+        </div>
+        <div class="map-container">
+          <div id="interactiveMap"></div>
+          <div class="map-attribution">Mount Kenya University, Thika Road, Nairobi</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Emergency CTA -->
+    <section class="emergency-banner">
+      <div class="container">
+        <div class="emergency-card">
+          <span class="emergency-icon">🚨</span>
+          <h3>Urgent Research Matters</h3>
+          <p>24/7 Hotline: <strong>+254 700 123 999</strong></p>
+          <small>For immediate assistance or critical research emergencies</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><span class="footer-logo-text">MKU CPR</span><br>Centre for Placenta Research</div>
+          <p>Africa’s first dedicated placenta research centre.</p>
+          <div class="social-icons">
+            <a href="https://x.com/CRID_MKU" class="social-icon" target="_blank">𝕏</a>
+            <a href="https://www.linkedin.com/in/gitaka-lab?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              class="social-icon" target="_blank">in</a>
+            <a href="https://www.instagram.com/GITAKA_LAB_CME" class="social-icon" target="_blank">📸</a>
+          </div>
+        </div>
+        <div>
+          <h4>Research</h4>
+          <ul>
+            <li><a href="research.html">Malaria</a></li>
+            <li><a href="research.html">Diagnostics</a></li>
+            <li><a href="research.html">Genomics</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Centre</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="publication.html">Publications</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <address>📍 Thika Road, Nairobi<br>📞 +254 700 123 456<br>✉️ info@mku-cpr.org</address>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 MKU CPR – Wellcome Trust Discovery Award</span>
+        <div><a href="#">Privacy</a> | <a href="#">Accessibility</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</body>
+
+</html>

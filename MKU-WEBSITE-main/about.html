@@ -1,0 +1,443 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description"
+    content="Discover Africa's first dedicated centre for placental and pregnancy-disease research at Mount Kenya University.">
+  <title>MKU CPR | About – Africa’s First Placenta Research Centre</title>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230f67b3'%3E%3Cpath d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/%3E%3C/svg%3E">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/about.css">
+
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-area">
+        <div class="logo-icon">CP</div>
+        <div class="logo-text">
+          <h1>MKU CPR</h1><span>Centre for Placenta Research</span>
+        </div>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li class="nav-group-core">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="research.html">Research</a>
+            <a href="people.html">People</a>
+            <a href="publication.html">Publications</a>
+          </li>
+          <li class="nav-separator" aria-hidden="true"></li>
+          <li class="nav-group-hub">
+
+            <a href="community.html">Community</a>
+          </li>
+          <li class="nav-action">
+            <a href="contact.html" class="contact-btn">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="research.html">Research</a>
+      <a href="people.html">People</a>
+
+      <a href="publication.html">Publications</a>
+      <a href="community.html">Community</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero-about">
+      <div class="hero-video-container">
+        <video id="aboutHeroVideo" src="video/about-hero-video.mp4" autoplay="autoplay" muted="muted" loop="loop"
+          playsinline="playsinline" preload="auto" class="hero-bg-video"
+          style="width: 100%; height: 100%; object-fit: cover !important;">
+          Your browser does not support the video tag.
+        </video>
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            const video = document.getElementById('aboutHeroVideo');
+            if (video) { video.playbackRate = 2.0; }
+          });
+        </script>
+
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-badge">🎓 Africa’s First Dedicated Centre</div>
+        <h1>Pioneering <span class="gradient-text">Placental Research</span><br>for a Healthier Africa</h1>
+        <p>Based at Mount Kenya University, supported by a Wellcome Trust Discovery Award, we are transforming maternal
+          and newborn health through breakthrough science and community action.</p>
+      </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="overview-section">
+      <div class="container">
+        <div class="overview-grid">
+          <div class="overview-text">
+            <h2>About the Centre</h2>
+            <div class="header-line"></div>
+            <p>The Center for Placental Research is a research group dedicated to advancing the understanding of
+              placental
+              biology in maternal and fetal health. Our work focuses on the mechanisms underlying placental function and
+              dysfunction, with particular emphasis on placental malaria, host–pathogen interactions, and their impact
+              on pregnancy outcomes.</p>
+            <p>We employ integrated laboratory, clinical, and field-based approaches to investigate how infectious
+              diseases and other factors influence placental development and function, particularly in resource-limited
+              settings. Our research aims to generate high-quality evidence to inform improved diagnostics, preventive
+              strategies, and interventions in maternal and neonatal health.</p>
+            <p>The Center is also committed to training and mentoring scientists, strengthening research capacity, and
+              contributing to locally grounded, globally relevant scientific discovery.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Counters (animated) -->
+    <section class="stats-row">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" id="counterPapers">0</div>
+            <div class="stat-label">Research Papers</div>
+            <div class="stat-sub">peer‑reviewed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="counterCommunities">0</div>
+            <div class="stat-label">Communities Served</div>
+            <div class="stat-sub">across Kenya</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="counterResearchers">0</div>
+            <div class="stat-label">Expert Researchers</div>
+            <div class="stat-sub">multidisciplinary</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="counterFunding">0</div>
+            <div class="stat-label">Funding (Million £)</div>
+            <div class="stat-sub">Wellcome Trust</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="mv-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Purpose</h2>
+          <div class="header-line"></div>
+          <p>Driven by a clear mission and a bold vision for maternal health</p>
+        </div>
+        <div class="mv-grid">
+          <div class="mv-card">
+            <div class="mv-icon">🎯</div>
+            <h3>Mission</h3>
+            <p>To discover, diagnose, and dismantle pregnancy diseases through innovative research, advanced
+              diagnostics, and community engagement – ensuring healthier outcomes for mothers and babies across Africa.
+            </p>
+            <span class="mv-badge">Active Every Day</span>
+          </div>
+          <div class="mv-card">
+            <div class="mv-icon">👁️</div>
+            <h3>Vision</h3>
+            <p>A future where no mother or baby suffers from preventable placental diseases, where Africa leads
+              pregnancy research, and scientific breakthroughs reach every community that needs them.</p>
+            <span class="mv-badge">Future Focused</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Heritage Section -->
+    <section class="heritage-section panel-singlecell">
+      <div class="container">
+        <div class="mku-grid heritage-grid">
+          <div class="mku-image">
+            <img src="images/gitakalab-1.webp" alt="Gitaka Lab Research">
+          </div>
+          <div class="mku-text">
+            <h3>Our Heritage & Future</h3>
+            <p>Founded in 2024 through a landmark Wellcome Trust Discovery Award, the MKU Centre for Placenta Research
+              (CPR) was born from a critical need: the lack of specialized pregnancy disease research focused
+              specifically on African genetics and environmental factors.</p>
+            <div class="bio-callout">
+              <strong>🔬 Placenta Essentials:</strong> A temporary but vital organ (~1lb disc) serving as the fetus's
+              lungs, liver, and immune shield during pregnancy. Key to understanding maternal health breakthroughs.
+            </div>
+            <p>Today, we represent the vanguard of maternal health science in the region, bridging the gap between
+              molecular biology and grassroots clinical practice. Our roadmap for the next decade includes establishing
+              the continent's first open-access placental biobank and expanding our genomic surveillance network to ten
+              Sub-Saharan nations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Mount Kenya University -->
+    <section class="mku-section">
+      <div class="container">
+        <div class="mku-grid mku-side-grid">
+          <div class="mku-text">
+            <h3>Why Mount Kenya University?</h3>
+            <p>As a leading private university in Kenya, MKU has a strong track record in health sciences and research
+              innovation. The Centre for Placenta Research benefits from state‑of‑the‑art laboratories, a collaborative
+              research culture, and deep community ties across the country.</p>
+            <div class="mku-stats">
+              <div class="mku-stat">
+                <div class="number">15+</div>
+                <div>Years of Excellence</div>
+              </div>
+              <div class="mku-stat">
+                <div class="number">50K+</div>
+                <div>Students</div>
+              </div>
+              <div class="mku-stat">
+                <div class="number">200+</div>
+                <div>Programs</div>
+              </div>
+            </div>
+          </div>
+          <div class="mku-image">
+            <img src="images/mku.jpg" alt="Mount Kenya University Campus">
+            <div class="image-badge">MKU</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portal Navigation Guide -->
+    <section class="portal-guide-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Navigating the Centre</h2>
+          <div class="header-line"></div>
+          <p>A quick guide to finding what you need on our portal</p>
+        </div>
+        <div class="guide-grid">
+          <div class="guide-item">
+            <div class="guide-icon">🔬</div>
+            <h4>Research</h4>
+            <p>Our core scientific focuses: Malaria, Genomics, and Diagnostics.</p>
+            <a href="research.html" class="guide-link">Explore Research →</a>
+          </div>
+          <div class="guide-item">
+            <div class="guide-icon">👥</div>
+            <h4>People</h4>
+            <p>Meet our Principal Investigator, senior faculty, and research team.</p>
+            <a href="people.html" class="guide-link">Meet the Team →</a>
+          </div>
+          <div class="guide-item">
+            <div class="guide-icon">📧</div>
+            <h4>Contact</h4>
+            <p>Reach out for collaborations, inquiries, or support.</p>
+            <a href="contact.html" class="guide-link">Get in Touch →</a>
+          </div>
+          <div class="guide-item">
+            <div class="guide-icon">📚</div>
+            <h4>Publications</h4>
+            <p>Access our peer-reviewed papers and academic contributions.</p>
+            <a href="publication.html" class="guide-link">View Papers →</a>
+          </div>
+          <div class="guide-item">
+            <div class="guide-icon">🤝</div>
+            <h4>Community</h4>
+            <p>Discover our field work and how we engage with mothers in Kenya.</p>
+            <a href="community.html" class="guide-link">See Impact →</a>
+          </div>
+          <div class="guide-item">
+            <div class="guide-icon">📧</div>
+            <h4>Contact</h4>
+            <p>Connect with us for collaborations or donation inquiries.</p>
+            <a href="contact.html" class="guide-link">Get in Touch →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Focus Areas -->
+    <section class="research-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Research Focus Areas</h2>
+          <div class="header-line"></div>
+          <p>Targeting the most urgent challenges in maternal‑fetal health</p>
+        </div>
+        <div class="research-grid">
+          <div class="research-card">
+            <div class="research-icon">🦟</div>
+            <h3>Malaria in Pregnancy</h3>
+            <p>Deciphering molecular mechanisms of placental malaria to develop early diagnostic tools and therapeutic
+              interventions.</p>
+          </div>
+          <div class="research-card">
+            <div class="research-icon">🔬</div>
+            <h3>Diagnostic Innovation</h3>
+            <p>Creating rapid, affordable point‑of‑care tests for placental diseases using CRISPR and lab‑on‑chip
+              technologies.</p>
+          </div>
+          <div class="research-card">
+            <div class="research-icon">🧬</div>
+            <h3>Genomic Surveillance</h3>
+            <p>Tracking drug resistance and pathogen evolution to inform targeted intervention strategies.</p>
+          </div>
+          <div class="research-card">
+            <div class="research-icon">🤰</div>
+            <h3>Maternal Health Systems</h3>
+            <p>Strengthening healthcare delivery through implementation science and community‑based programs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="leadership-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Leadership Team</h2>
+          <div class="header-line"></div>
+          <p>World‑class experts driving our research mission</p>
+        </div>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-img"><img src="people/Prof.-Jesse-Gitaka-MBChB-MTM-PhD.webp" alt="Prof. Jesse Gitaka">
+            </div>
+            <h3>Prof. Jesse Gitaka</h3>
+            <p class="team-title">Director</p>
+            <p>Leading expert in placental malaria with 15+ years’ experience.</p>
+          </div>
+          <div class="team-card">
+            <div class="team-img"><img src="people/Bernard-N.-Kanoi-PhD.webp" alt="Dr. Bernard Kanoi"></div>
+            <h3>Dr. Bernard Kanoi</h3>
+            <p class="team-title">Deputy Director</p>
+            <p>Specialist in malaria immuno-epidemiology and vaccine development.</p>
+          </div>
+          <div class="team-card">
+            <div class="team-img"><img src="people/Dr-Kobia-Francis.webp" alt="Dr. Kobia Francis"></div>
+            <h3>Dr. Kobia Francis</h3>
+            <p class="team-title">Research Lead</p>
+            <p>Expert in molecular basis of fetal-maternal innate immune conflict.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Support & Donations Section -->
+    <section class="donation-section">
+      <div class="container">
+        <div class="donation-grid">
+          <div class="donation-text">
+            <h2>Support Our Science</h2>
+            <p>The MKU Centre for Placenta Research is a non-profit academic institution. Every dollar donated directly
+              funds life-saving tools like CRISPR-based diagnostic kits and free prenatal screenings for high-risk
+              communities.</p>
+            <p>Your contribution helps us train the next generation of African scientists and keep our laboratories at
+              the cutting edge of global medicine.</p>
+          </div>
+          <div class="donation-card">
+            <h3>Ways to Give</h3>
+            <ul class="donation-methods">
+              <li><span class="donation-icon">💳</span> International Wire / Bank Transfer</li>
+              <li><span class="donation-icon">📱</span> M-PESA Paybill: <strong>522522</strong> (Acc: 01100 CPR)</li>
+              <li><span class="donation-icon">🤝</span> Research Partnership Programs</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-about">
+      <div class="container text-center">
+        <h2>Ready to make an impact?</h2>
+        <p>Whether you are a researcher, a philanthropist, or a community leader, we invite you to join our journey
+          towards healthier pregnancies across Africa.</p>
+        <div class="btn-group">
+          <a href="contact.html" class="btn-primary">Partner With Us →</a>
+          <a href="research.html" class="btn-outline">Our Research</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><span class="footer-logo-text">MKU CPR</span><br>Centre for Placenta Research</div>
+          <p>Africa’s first dedicated placenta research centre.</p>
+          <div class="social-icons">
+            <a href="https://x.com/CRID_MKU" class="social-icon" target="_blank">𝕏</a>
+            <a href="https://www.linkedin.com/in/gitaka-lab?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              class="social-icon" target="_blank">in</a>
+            <a href="https://www.instagram.com/GITAKA_LAB_CME" class="social-icon" target="_blank">📸</a>
+          </div>
+        </div>
+        <div>
+          <h4>Research</h4>
+          <ul>
+            <li><a href="research.html">Malaria</a></li>
+            <li><a href="research.html">Diagnostics</a></li>
+            <li><a href="research.html">Genomics</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Centre</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="publication.html">Publications</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <address>📍 Thika Road, Nairobi<br>📞 +254 700 123 456<br>✉️ info@mku-cpr.org</address>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 MKU CPR – Wellcome Trust Discovery Award</span>
+        <div><a href="contact.html">Privacy</a> | <a href="contact.html">Accessibility</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts unified -->
+  <script src="scripts/about.js" defer></script>
+  <!-- Force playback for hero video -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const video = document.querySelector('.hero-bg-video');
+      if (video) {
+        video.muted = true;
+        const playVideo = () => {
+          video.play().catch(err => console.log('Autoplay blocked, waiting for interaction'));
+        };
+        playVideo();
+        // Fallback for mobile interaction
+        ['click', 'touchstart', 'scroll'].forEach(ev => {
+          document.addEventListener(ev, playVideo, { once: true });
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>

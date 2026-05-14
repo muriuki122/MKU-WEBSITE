@@ -1,0 +1,299 @@
+<!-- community.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description"
+    content="Join the MKU Centre for Placenta Research community – programs, stories, and ways to advance maternal health in Africa.">
+  <title>MKU CPR | Community & Engagement</title>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230f67b3'%3E%3Cpath d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/community.css">
+  <script src="scripts/community.js" defer></script>
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-area">
+        <div class="logo-icon">CP</div>
+        <div class="logo-text">
+          <h1>MKU CPR</h1><span>Centre for Placenta Research</span>
+        </div>
+      </a>
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="index.html">🏠 Home</a></li>
+          <li><a href="about.html">ℹ️ About</a></li>
+          <li><a href="research.html">🔬 Research</a></li>
+          <li><a href="people.html">👥 People</a></li>
+
+          <li><a href="publication.html">📚 Publications</a></li>
+          <li><a href="community.html" class="active">🤝 Community</a></li>
+          <li><a href="contact.html" class="contact-btn">📧 Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="research.html">Research</a><a
+        href="people.html">People</a>
+      <a href="publication.html">Publications</a><a href="community.html" class="active">Community</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero Section with animated background -->
+    <section class="hero-community">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-badge">🤝 Community Engagement</div>
+        <h1>Working Together for <span class="gradient-text">Healthier Mothers</span></h1>
+        <p>We connect groundbreaking research with grassroots action. Join our movement to end preventable maternal
+          deaths in Africa.</p>
+      </div>
+      <div class="hero-wave">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path
+            d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z">
+          </path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Stats Counters (animated) -->
+    <section class="stats-row">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" id="counterLives">0</div>
+            <div class="stat-label">Lives Impacted</div>
+            <div class="stat-sub">mothers & babies</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="counterCommunities">0</div>
+            <div class="stat-label">Communities</div>
+            <div class="stat-sub">across Kenya</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="counterTrained">0</div>
+            <div class="stat-label">Health Workers Trained</div>
+            <div class="stat-sub">certified</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="counterSuccess">0<span style="font-size:1.8rem;">%</span></div>
+            <div class="stat-label">Success Rate</div>
+            <div class="stat-sub">early detection</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Programs (interactive cards) -->
+    <section class="programs-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Community Programs</h2>
+          <div class="header-line"></div>
+          <p>Transforming research into real-world impact through grassroots action</p>
+        </div>
+        <div class="programs-grid">
+          <div class="program-card">
+            <div class="program-img" style="background-image: url('images/Maternal-Health-Workshops.jpg');"></div>
+            <div class="program-content">
+              <span class="program-tag">🤰 Maternal Health</span>
+              <h3>Maternal Health Workshops</h3>
+              <p>Empowering pregnant women and new mothers with life-saving knowledge, danger sign recognition, and
+                nutrition advice.</p>
+              <ul class="check-list">
+                <li>Monthly sessions in 15+ communities</li>
+                <li>2,500+ women reached annually</li>
+                <li>Partnership with local clinics</li>
+              </ul>
+              <button class="btn-program" onclick="window.location.href='contact.html'" data-program="workshop">Join
+                Workshop →</button>
+            </div>
+          </div>
+          <div class="program-card">
+            <div class="program-img" style="background-image: url('images/Health-Worker-Training.jpg');"></div>
+            <div class="program-content">
+              <span class="program-tag">👩‍⚕️ Healthcare Training</span>
+              <h3>Health Worker Training</h3>
+              <p>Advanced diagnostic and treatment protocols for placental diseases, delivered through hands-on
+                certification courses.</p>
+              <ul class="check-list">
+                <li>500+ healthcare workers trained</li>
+                <li>Certification & CPD points</li>
+                <li>Blended learning + mentorship</li>
+              </ul>
+              <button class="btn-program" onclick="window.location.href='contact.html'" data-program="training">Register
+                for Training →</button>
+            </div>
+          </div>
+          <div class="program-card">
+            <div class="program-img" style="background-image: url('images/Mobile-Health-Clinics.jpg');"></div>
+            <div class="program-content">
+              <span class="program-tag">🏘️ Community Outreach</span>
+              <h3>Mobile Health Clinics</h3>
+              <p>Bringing screening, diagnostics, and health education directly to remote villages.</p>
+              <ul class="check-list">
+                <li>12 mobile clinics per year</li>
+                <li>Free malaria & syphilis screening</li>
+                <li>Follow-up care coordination</li>
+              </ul>
+              <button class="btn-program" onclick="window.location.href='contact.html'" data-program="outreach">Support
+                Outreach →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Stories (testimonials) -->
+    <section class="impact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Stories of Change</h2>
+          <div class="header-line"></div>
+          <p>Real lives transformed through community action</p>
+        </div>
+        <div class="stories-grid">
+          <div class="story-card">
+            <div class="story-quote">“The workshop taught me to recognize danger signs. When I had unusual bleeding, I
+              went to the clinic immediately. My baby was delivered safely — I owe that to the CPR team.”</div>
+            <div class="story-author">
+              <div class="avatar">SM</div>
+              <div>
+                <h4>Sarah Mwangi</h4>
+                <p>New mother, Kitale</p>
+              </div>
+            </div>
+          </div>
+          <div class="story-card">
+            <div class="story-quote">“The diagnostic training completely changed how I assess placental conditions. I’ve
+              now helped over 200 mothers get timely care. This program saves lives every single day.”</div>
+            <div class="story-author">
+              <div class="avatar">DK</div>
+              <div>
+                <h4>David Kiprop</h4>
+                <p>Clinical Officer, Eldoret</p>
+              </div>
+            </div>
+          </div>
+          <div class="story-card">
+            <div class="story-quote">“Our village used to lose 2–3 mothers every year. Since the CPR mobile clinics
+              started, we have had zero maternal deaths in 18 months. It’s a miracle.”</div>
+            <div class="story-author">
+              <div class="avatar">JO</div>
+              <div>
+                <h4>Joseph Otieno</h4>
+                <p>Community Elder, Baringo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get Involved Cards (Call to Action) -->
+    <section class="involved-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>How You Can Help</h2>
+          <div class="header-line"></div>
+          <p>Everyone has a role to play in improving maternal health</p>
+        </div>
+        <div class="involved-grid">
+          <div class="involved-card">
+            <div class="involved-icon">🤝</div>
+            <h3>Partner With Us</h3>
+            <p>Collaborate on research, community projects, or healthcare initiatives.</p>
+            <button class="involved-btn" onclick="window.location.href='contact.html'" data-action="partner">Become
+              Partner →</button>
+          </div>
+          <div class="involved-card">
+            <div class="involved-icon">🎓</div>
+            <h3>Volunteer Expertise</h3>
+            <p>Share your skills in training, mentorship, or program implementation.</p>
+            <button class="involved-btn" onclick="window.location.href='contact.html'" data-action="volunteer">Join as
+              Volunteer →</button>
+          </div>
+          <div class="involved-card">
+            <div class="involved-icon">💬</div>
+            <h3>Share Your Story</h3>
+            <p>Inspire others by sharing your maternal health journey.</p>
+            <button class="involved-btn" onclick="window.location.href='contact.html'" data-action="story">Share Story
+              →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter & Stay Connected -->
+    <div class="container newsletter-wrapper">
+      <div class="newsletter-banner">
+        <div>
+          <h3>📧 Stay Connected</h3>
+          <p>Get community news, event invites, and impact reports</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Subscribe →</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><span class="footer-logo-text">MKU CPR</span><br>Centre for Placenta Research</div>
+          <p>Africa’s first dedicated placenta research centre.</p>
+          <div class="social-icons">
+            <a href="https://x.com/CRID_MKU" class="social-icon" target="_blank">𝕏</a>
+            <a href="https://www.linkedin.com/in/gitaka-lab?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              class="social-icon" target="_blank">in</a>
+            <a href="https://www.instagram.com/GITAKA_LAB_CME" class="social-icon" target="_blank">📸</a>
+          </div>
+        </div>
+        <div>
+          <h4>Research</h4>
+          <ul>
+            <li><a href="research.html">Malaria</a></li>
+            <li><a href="research.html">Diagnostics</a></li>
+            <li><a href="research.html">Genomics</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Centre</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="publication.html">Publications</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <address>📍 Thika Road, Nairobi<br>📞 +254 700 123 456<br>✉️ community@mku-cpr.org</address>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 MKU CPR – Wellcome Trust Discovery Award</span>
+        <div><a href="#">Privacy</a> | <a href="#">Accessibility</a></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
